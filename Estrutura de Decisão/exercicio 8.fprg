@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-07 09:26:37 "/>
+        <attribute name="created" value="QWx1bm87TEFCMjA1TTM4OzIwMjQtMDUtMDc7IjA5OjIxOjI2ICI7MjI0OA=="/>
+        <attribute name="edited" value="QWx1bm87TEFCMjA1TTM4OzIwMjQtMDUtMDc7IjA5OjI2OjM3ICI7MTsyMzYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira um numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero % 2 == 0">
+                <then>
+                    <output expression="&quot;&#201; um numero par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#201; um numero impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

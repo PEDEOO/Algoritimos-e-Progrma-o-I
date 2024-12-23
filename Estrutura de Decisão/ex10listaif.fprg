@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-13 07:27:56 "/>
+        <attribute name="created" value="QWx1bm87TEFCMjA1TTM1OzIwMjQtMDUtMTM7IjA3OjE4OjE1ICI7MjI0NA=="/>
+        <attribute name="edited" value="QWx1bm87TEFCMjA1TTM1OzIwMjQtMDUtMTM7IjA3OjI3OjU2ICI7MTsyMzU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual o numero 1?&quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Qual o numero 2?&quot;" newline="True"/>
+            <input variable="numero2"/>
+            <if expression="numero1 &gt; numero2">
+                <then>
+                    <output expression="&quot;A ordem sera:&quot; &amp;numero2 &amp; &quot; e &quot;  &amp;numero1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;A ordem sera:&quot; &amp;numero1 &amp; &quot; e &quot;  &amp;numero2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
