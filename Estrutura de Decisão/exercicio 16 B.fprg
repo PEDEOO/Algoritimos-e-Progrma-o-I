@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="batsi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-13 11:23:56 "/>
+        <attribute name="created" value="YmF0c2k7REVTS1RPUC1OMjVBN1Q0OzIwMjQtMDUtMDY7IjA1OjE1OjM2ICI7Mjc0NQ=="/>
+        <attribute name="edited" value="QWx1bm87TEFCMjA1TTM4OzIwMjQtMDUtMDg7IjA5OjMyOjEzICI7NTsyMzU5"/>
+        <attribute name="edited" value="YmF0c2k7REVTS1RPUC1OMjVBN1Q0OzIwMjQtMDUtMTM7IjExOjIzOjU2ICI7MzsyODUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade, peso, mg" type="Integer" array="False" size=""/>
+            <declare name="gotas" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira a sua idade&quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Insira o seu peso&quot;" newline="True"/>
+            <input variable="peso"/>
+            <if expression="idade &gt;= 12">
+                <then>
+                    <if expression="peso &gt;= 60">
+                        <then>
+                            <assign variable="mg" expression="1000"/>
+                        </then>
+                        <else>
+                            <assign variable="mg" expression="875"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="peso &gt;= 30">
+                        <then>
+                            <assign variable="mg" expression="750"/>
+                        </then>
+                        <else>
+                            <if expression="peso &gt;= 25">
+                                <then>
+                                    <assign variable="mg" expression="500"/>
+                                </then>
+                                <else>
+                                    <if expression="peso &gt;= 17">
+                                        <then>
+                                            <assign variable="mg" expression="375"/>
+                                        </then>
+                                        <else>
+                                            <if expression="peso &gt;= 10">
+                                                <then>
+                                                    <assign variable="mg" expression="250"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="peso &gt;= 5">
+                                                        <then>
+                                                            <assign variable="mg" expression="125"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Com esse peso n&#227;o pode tomar a medica&#231;&#227;o&quot;" newline="True"/>
+                                                            <assign variable="mg" expression="0"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="gotas" expression="(mg * 20) /500"/>
+            <output expression="&quot;Ele devera tomar essa quantidade de gotas: &quot;  &amp;gotas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

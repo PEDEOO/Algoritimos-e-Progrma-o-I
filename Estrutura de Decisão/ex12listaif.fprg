@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-13 08:00:10 "/>
+        <attribute name="created" value="QWx1bm87TEFCMjA1TTM1OzIwMjQtMDUtMTM7IjA3OjU1OjA1ICI7MjI0NA=="/>
+        <attribute name="edited" value="QWx1bm87TEFCMjA1TTM1OzIwMjQtMDUtMTM7IjA4OjAwOjEwICI7MTsyMzM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="codigo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual seu codigo?&quot;" newline="True"/>
+            <input variable="codigo"/>
+            <if expression="codigo == 4">
+                <then>
+                    <output expression="&quot;Seu cargo &#233; gerente e seu percentual &#233; de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="codigo == 3">
+                        <then>
+                            <output expression="&quot;Seu cargo &#233; caixa e seu percentual &#233; de 20%&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="codigo == 2">
+                                <then>
+                                    <output expression="&quot;Seu cargo &#233; secretario e seu percentual &#233; de 35%&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="codigo == 1">
+                                        <then>
+                                            <output expression="&quot;Seu cargo &#233; escrituario e seu percentual &#233; de 50%&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Voce nao tem cargo&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
